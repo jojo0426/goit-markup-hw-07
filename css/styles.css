@@ -12,6 +12,7 @@
   --navyblue-modal: rgba(46, 47, 66, 0.4);
 }
 
+/* css margin reset */
 html {
   box-sizing: border-box;
 }
@@ -32,6 +33,7 @@ p {
   margin: 0;
 }
 
+/* this is the common properties for tags and class */
 img {
   display: block;
   width: 100%;
@@ -77,19 +79,7 @@ header {
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+/* this is for the header section */
 .logo-blue {
   color: var(--iris-color);
 }
@@ -120,6 +110,7 @@ header {
   padding: 24px 0;
 }
 
+/* this is for the navigation section  */
 .header-menu-list {
   display: none;
 
@@ -224,7 +215,6 @@ header {
 }
 
 /* burger menu */
-
 .menu-toggle {
   display: flex;
   align-items: center;
@@ -382,7 +372,6 @@ header {
 }
 
 /* hero section  */
-
 .hero {
   background-color: var(--navy-blue-color);
   padding: 112px 0;
@@ -487,6 +476,7 @@ header {
   cursor: pointer;
 }
 
+/* general styling for all section  */
 .section {
   padding: 96px 0;
 
@@ -499,6 +489,7 @@ header {
   }
 }
 
+/* this is for the features section  */
 .feature-list,
 .image-list {
   display: flex;
@@ -603,6 +594,7 @@ header {
   }
 }
 
+/* this is for what we do section  */
 .section-no-top-padding {
   padding-top: 0;
 }
@@ -634,6 +626,7 @@ header {
   margin-bottom: 72px;
 }
 
+/* this is for the team card section  */
 .section-team {
   background-color: var(--cloud);
 }
@@ -742,6 +735,7 @@ header {
   fill: currentColor;
 }
 
+/* this is for the customers section  */
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -794,7 +788,6 @@ header {
 }
 
 /* this is for porfolio  */
-
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -945,8 +938,7 @@ header {
   color: var(--slate);
 }
 
-/* footer */
-
+/* this is for footer  sectoin*/
 .footer {
   background-color: var(--navy-blue-color);
   padding: 100px 0;
@@ -1183,8 +1175,21 @@ header {
   }
 }
 
-/* this if for modal */
+/* this is for modal terms & agreement */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
+/* this if for modal */
 .backdrop {
   position: fixed;
   top: 0;
