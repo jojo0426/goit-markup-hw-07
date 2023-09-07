@@ -36,7 +36,7 @@ p {
 /* this is the common properties for tags and class */
 img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   max-width: 100%;
   height: auto;
 }
@@ -180,8 +180,12 @@ header {
 }
 
 .header-address-link {
-  padding: 24px 0;
+  padding: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .menu-active,
@@ -196,7 +200,7 @@ header {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -209,7 +213,7 @@ header {
 .header-address-item {
   font-size: 16px;
   font-style: normal;
-  line-height: 24px;
+  /* line-height: 24px; */
   letter-spacing: 0.02em;
   color: var(--slate);
 }
@@ -318,7 +322,7 @@ header {
 
 .highlight {
   color: var(--iris-color);
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
@@ -326,7 +330,8 @@ header {
 
 .hamburger-social-list {
   display: flex;
-  justify-content: space-between;
+  gap: 56px;
+  /* justify-content: space-between; */
 }
 
 .hamburger-social-link {
@@ -359,7 +364,7 @@ header {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 80px 0 40px 40px;
   background-color: var(--white);
   z-index: 200;
 
@@ -414,7 +419,7 @@ header {
     background-image: url(../images/dark-hero-bg.png),
       url(../images/hero-bg-d.jpg),
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-    background-size: 1440px, 1440px;
+    /* background-size: 1440px, 1440px; */
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -672,7 +677,9 @@ header {
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 24px) / 2);
+    /* width: calc((100% - 24px) / 2); */
+    width: 264px;
+    margin: 0;
   }
 
   @media screen and (min-width: 1158px) {
@@ -1206,7 +1213,7 @@ header {
   top: 50%;
   left: 50%;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--dairy);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
