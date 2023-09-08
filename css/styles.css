@@ -167,16 +167,18 @@ header {
   width: 100%;
 }
 
-.menu-active::after {
-  content: "";
-  border: 2px solid var(--ocean);
-  border-radius: 2px;
-  background-color: var(--ocean);
-  height: 4px;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -2px;
+@media screen and (min-width: 768px) {
+  .menu-active::after {
+    content: "";
+    border: 2px solid var(--ocean);
+    border-radius: 2px;
+    background-color: var(--ocean);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+  }
 }
 
 .header-address-link {
@@ -185,6 +187,10 @@ header {
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    font-size: 16px;
   }
 }
 
